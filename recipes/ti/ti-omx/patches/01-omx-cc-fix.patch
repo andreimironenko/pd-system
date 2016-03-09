@@ -1,0 +1,17 @@
+Index: ti-omx-05_02_00_46-r2/git/makerules/rules_a8.mk
+===================================================================
+--- ti-omx-05_02_00_46-r2.orig/git/makerules/rules_a8.mk	2012-11-27 18:31:01.019591663 +0000
++++ ti-omx-05_02_00_46-r2/git/makerules/rules_a8.mk	2012-11-27 18:31:22.539591657 +0000
+@@ -11,9 +11,9 @@
+ 
+ # Set compiler/archiver/linker commands and include paths
+ CODEGEN_INCLUDE = $(CODEGEN_PATH_A8)
+-CC = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-gcc
+-AR = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-ar
+-LNK = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-ld
++#CC = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-gcc
++#AR = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-ar
++#LNK = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-ld
+ 
+ # Internal CFLAGS - normally doesn't change
+ CFLAGS_INTERNAL = -fPIC -fno-strict-aliasing -MD -MF $(DEPFILE).P -march=armv5t -Dfar= -D_DEBUG_=1 -DMULTICHANNEL_OPT=1

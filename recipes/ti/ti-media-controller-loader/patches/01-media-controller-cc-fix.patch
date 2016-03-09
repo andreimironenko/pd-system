@@ -1,0 +1,23 @@
+Index: ti-media-controller-loader-3_00_00_05-r0/git/makerules/rules_a8.mk
+===================================================================
+--- ti-media-controller-loader-3_00_00_05-r0.orig/git/makerules/rules_a8.mk	2012-11-23 16:53:18.000000000 +0000
++++ ti-media-controller-loader-3_00_00_05-r0/git/makerules/rules_a8.mk	2012-11-23 19:37:27.055686859 +0000
+@@ -11,12 +11,14 @@
+ 
+ # Set compiler/archiver/linker commands and include paths
+ CODEGEN_INCLUDE = $(CODEGEN_PATH_A8)
+-CC = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-gcc
+-AR = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-ar
+-LNK = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-ld
++
++#OE will define these compiler variables
++#CC = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-gcc
++#AR = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-ar
++#LNK = $(CODEGEN_PATH_A8)/bin/arm-none-linux-gnueabi-ld
+ 
+ # Internal CFLAGS - normally doesn't change
+-CFLAGS_INTERNAL = -fPIC -fno-strict-aliasing -MD -MF $(DEPFILE).P -march=armv5t -Dfar= -D_DEBUG_=1 -DMULTICHANNEL_OPT=1
++CFLAGS_INTERNAL = -fPIC -fno-strict-aliasing -MD -MF $(DEPFILE).P -Dfar= -D_DEBUG_=1 -DMULTICHANNEL_OPT=1
+ CFLAGS_DIROPTS = 
+ 
+ # XDC specific CFLAGS 

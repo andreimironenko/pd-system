@@ -1,0 +1,13 @@
+Index: ti-media-controller-loader-3_00_00_05-r0/git/makerules/rules_a8.mk
+===================================================================
+--- ti-media-controller-loader-3_00_00_05-r0.orig/git/makerules/rules_a8.mk	2012-11-23 18:15:00.359688237 +0000
++++ ti-media-controller-loader-3_00_00_05-r0/git/makerules/rules_a8.mk	2012-11-23 18:39:04.999687835 +0000
+@@ -54,7 +54,7 @@
+ _CFLAGS = $(CFLAGS_GLOBAL_$(CORE)) $(CFLAGS_INTERNAL) $(CFLAGS_XDCINTERNAL) $(CFLAGS_LOCAL_COMMON) $(CFLAGS_LOCAL_$(CORE)) $(CFLAGS_LOCAL_$(PLATFORM)) $(CFLAGS_LOCAL_$(SOC)) $(CFLAGS_APP_DEFINES) $(CFLAGS_COMP_COMMON) $(CFLAGS_GLOBAL_$(PLATFORM))
+ 
+ # Add some necessary INCLUDES from CodeSourcery
+-INCLUDES += -I$(CODEGEN_PATH_A8)/arm-none-linux-gnueabi/libc/usr/include
++INCLUDES += -I$(STAGIN_INCDIR)
+ 
+ # Object file creation
+ # The first $(CC) generates the dependency make files for each of the objects

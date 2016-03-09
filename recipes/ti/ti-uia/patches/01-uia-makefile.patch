@@ -1,0 +1,52 @@
+Index: ti-uia-1_01_01_14-r1/git/Makefile
+===================================================================
+--- ti-uia-1_01_01_14-r1.orig/git/Makefile	2012-11-27 18:13:14.000000000 +0000
++++ ti-uia-1_01_01_14-r1/git/Makefile	2012-11-27 20:03:01.331590125 +0000
+@@ -38,10 +38,10 @@
+ .libs: 
+ 	@echo "#"
+ 	@echo "# Making UIA Linux libraries ..."
+-	make -C ti/uia/linux
++	make -C packages/ti/uia/linux
+     
+ .examples: 
+ 	@echo "#"
+ 	@echo "# Making evmti816x examples ..."
+-	make -C ti/uia/examples/evmti816x
++	make -C packages/ti/uia/examples/evmti816x
+ 
+Index: ti-uia-1_01_01_14-r1/git/packages/ti/uia/examples/evmti816x/Makefile
+===================================================================
+--- ti-uia-1_01_01_14-r1.orig/git/packages/ti/uia/examples/evmti816x/Makefile	2012-11-27 18:13:14.000000000 +0000
++++ ti-uia-1_01_01_14-r1/git/packages/ti/uia/examples/evmti816x/Makefile	2012-11-27 20:03:01.331590125 +0000
+@@ -48,7 +48,7 @@
+ LOGGERSM_LIBS = ../../linux/lib/loggersm.a
+ STDLIBS = -lpthread -lrt -lm
+ 
+-CC = /db/toolsrc/library/tools/vendors/cs/arm/arm-2009q1-203/bin/arm-none-linux-gnueabi-gcc
++#CC = /db/toolsrc/library/tools/vendors/cs/arm/arm-2009q1-203/bin/arm-none-linux-gnueabi-gcc
+ 
+ CPPFLAGS = -g -O2 -Wall -I. -I../../../.. -I$(SYSLINK_INSTALL_DIR) -I$(IPC_INSTALL_DIR)
+ 
+Index: ti-uia-1_01_01_14-r1/git/packages/ti/uia/linux/Makefile
+===================================================================
+--- ti-uia-1_01_01_14-r1.orig/git/packages/ti/uia/linux/Makefile	2012-11-27 18:13:14.000000000 +0000
++++ ti-uia-1_01_01_14-r1/git/packages/ti/uia/linux/Makefile	2012-11-27 20:25:45.811589743 +0000
+@@ -43,7 +43,7 @@
+ IPC_INSTALL_DIR ?= /db/vtree/library/trees/ipc/ipc-h27/exports/ipc_1_24_02_27/packages
+ SYSLINK_INSTALL_DIR ?= /db/atree/library/trees/sl/sl-c20/exports/syslink_2_10_03_20/packages
+ 
+-CC = /db/toolsrc/library/tools/vendors/cs/arm/arm-2009q1-203/bin/arm-none-linux-gnueabi-gcc
++#CC = /db/toolsrc/library/tools/vendors/cs/arm/arm-2009q1-203/bin/arm-none-linux-gnueabi-gcc
+ CPPFLAGS = -O2 -g -Wall -fno-strict-aliasing -I. -I../runtime -I../../.. -I$(SYSLINK_INSTALL_DIR) -I$(IPC_INSTALL_DIR)
+ 
+ OUTPUT_OPTION = -o lib/$@
+@@ -53,7 +53,7 @@
+ servicemgr_srcs = ServiceMgr.c 
+ loggersm_srcs = LoggerSM.c
+ 
+-RANLIB = /db/toolsrc/library/tools/vendors/cs/arm/arm-2009q1-203/bin/arm-none-linux-gnueabi-ranlib
++RANLIB ?= /db/toolsrc/library/tools/vendors/cs/arm/arm-2009q1-203/bin/arm-none-linux-gnueabi-ranlib
+ 
+ all: lib/servicemgr.a lib/loggersm.a
+ 
