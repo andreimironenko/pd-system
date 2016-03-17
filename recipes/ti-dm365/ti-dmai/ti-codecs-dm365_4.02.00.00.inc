@@ -11,7 +11,7 @@ PV="4_02_00_00"
 
 #CODEC_SUITE_NAME="${WORKDIR}/${PN}_${PV}"
 
-SRC_URI = "git://${GITSERVER}/ti-dm365/codec-engine.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/codec-engine-dm365.git;protocol=git;branch=${BRANCH}"
 S = "${WORKDIR}/git"
 
 CODEC_SUITE_NAME="${S}"

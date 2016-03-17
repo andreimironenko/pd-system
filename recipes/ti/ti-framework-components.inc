@@ -17,7 +17,7 @@ BRANCH = "master"
 
 S = "${WORKDIR}/git"
 
-SRC_URI = "git://${GITSERVER}/ti/framework_components.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/framework_components.git;protocol=git;branch=${BRANCH}"
 
 
 do_install() {

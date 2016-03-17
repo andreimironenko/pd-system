@@ -19,7 +19,7 @@ BRANCH = "master"
 
 S = "${WORKDIR}/git"
 
-SRC_URI = "git://${GITSERVER}/ti/ipc.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/ipc.git;protocol=git;branch=${BRANCH}"
 SRC_URI =+ "file://ipc.pc"
 
 DEPENDS = "ti-sysbios ti-cgt6x ti-xdctools"

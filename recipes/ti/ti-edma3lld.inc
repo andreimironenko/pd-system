@@ -12,7 +12,7 @@ SRCREV = "edma3lld_${PV}"
 BRANCH = "master"
 
 S = "${WORKDIR}/git"
-SRC_URI = "git://${GITSERVER}/ti/edma3lld.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/edma3lld.git;protocol=git;branch=${BRANCH}"
 
 
 do_install() {

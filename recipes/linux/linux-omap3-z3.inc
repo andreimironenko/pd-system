@@ -9,7 +9,7 @@ require setup-defconfig.inc
 
 BRANCH ?= "master"
 
-SRC_URI = "git://${GITSERVER}/bsp/linux-omap3-z3.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/linux-omap3-z3-2.6.37.git;protocol=git;branch=${BRANCH} \
            file://defconfig \
            "
 

@@ -9,7 +9,7 @@ require ${OEBASE}/arago/recipes/ti/ti-paths.inc
 require ${OEBASE}/arago/recipes/ti/ti-staging.inc
 #require ${OEBASE}/arago/recipes/ti/ti-eula-unpack.inc
 
-SRC_URI = "git://${GITSERVER}/ti-dm365/xdctools.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/xdctools.git;protocol=git;branch=${BRANCH}"
 S = "${WORKDIR}/git"
 
 TI_BIN_UNPK_CMDS="Y: qY:workdir:Y"

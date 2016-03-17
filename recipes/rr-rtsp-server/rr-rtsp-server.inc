@@ -8,7 +8,7 @@ inherit autotools
 DEPENDS = "gst-plugin-base gst-plugin-bad gst-plugin-good gst-plugin-ugly gst-rtsp"
 RDEPENDS = "gst-plugin-base gst-plugin-bad gst-plugin-good gst-plugin-ugly gst-rtsp"
 
-SRC_URI = "git://${GITSERVER}/oss/rr-rtsp-server.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/rr-rtsp-server.git;protocol=git;branch=${BRANCH}"
 
 BRANCH ?= "master"
 S = "${WORKDIR}/git"

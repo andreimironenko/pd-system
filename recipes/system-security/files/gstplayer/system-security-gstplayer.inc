@@ -1,11 +1,8 @@
 do_install_append () {
-    install -d ${D}/home/root/.ssh
-    
-    install ${S}/id_rsa.db ${D}/home/root/.ssh/
-    chmod 0600 ${D}/home/root/.ssh/id_rsa.db
+  :
 }
-FILES_${PN} = "/home/root/.ssh"
-INSANE_SKIP_${PN} = True
+#FILES_${PN} = "/home/root/.ssh"
+#INSANE_SKIP_${PN} = True
 
 
 do_deploy () {

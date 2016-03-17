@@ -8,7 +8,7 @@ DEPENDS = "mtd-utils"
 COMPATIBLE_MACHINE = "(dm365-htc|dm365-evm)"
 EXTRA_OEMAKE = "CROSSCOMPILE=${TARGET_PREFIX}"
 
-SRC_URI = "git://${GITSERVER}/ti-dm365/flash-utils.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/flash-utils-dm365.git;protocol=git;branch=${BRANCH}"
 
 #No configuration is required
 do_configure() {

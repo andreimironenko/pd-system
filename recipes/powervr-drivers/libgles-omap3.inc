@@ -22,7 +22,7 @@ EXTRA_SRC_URI ="\
 "
 #file://${OEBASE}/arago/recipes/powervr-drivers/${PN}/0001-Added-sdk-make-install-file-to-graphics-sdk.patch \
 
-SRC_URI = "git://${GITSERVER}/ti/graphics-sdk.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/graphics-sdk.git;protocol=git;branch=${BRANCH}"
 SRC_URI += ${EXTRA_SRC_URI}
 
 # For accessing SUPPORT_XORG value

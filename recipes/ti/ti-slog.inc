@@ -4,4 +4,4 @@ SRCREV = "slog_${PV}"
 BRANCH = "master"
 
 S = "${WORKDIR}/git"
-SRC_URI = "git://${GITSERVER}/ti/slog.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/slog.git;protocol=git;branch=${BRANCH}"

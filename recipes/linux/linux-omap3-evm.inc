@@ -9,7 +9,7 @@ require setup-defconfig.inc
 
 BRANCH  ?= "branch.v2.6.37_TI81XXPSP_04.04.00.01.patch2"
 SRCREV  = "v${PV}"
-SRC_URI = "git://${GITSERVER}/bsp/linux-omap3.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/linux-omap3-evm-2.6.37.git;protocol=git;branch=${BRANCH} \
            "
 
 # Requires support for SOC_FAMILY matching in COMPATIBLE_MACHINE

@@ -1,7 +1,7 @@
 require ${OEBASE}/arago/recipes/ti/ti-media-controller-loader.inc
 
 
-COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-stib)"
+COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-evm)"
 
 SRCREV = "ti-media-controller_${PV}"
 BRANCH = "master"
@@ -18,7 +18,7 @@ EXTRA_OEMAKE = "PLATFORM=${PLATFORM} \
         CODEGEN_PATH_DSPELF=${CODEGEN_INSTALL_DIR} \
 "
 
-SRC_URI = "git://${GITSERVER}/ti/media-controller-utils.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/media-controller-utils.git;protocol=git;branch=${BRANCH} \
            file://load-hd-firmware.sh \
            file://patches \
 "

@@ -6,7 +6,7 @@ SRCREV = "syslink_${PV}"
 BRANCH = "master"
 
 S = "${WORKDIR}/git"
-SRC_URI = "git://${GITSERVER}/ti/syslink.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/syslink.git;protocol=git;branch=${BRANCH}"
 
 do_install_append_dm814x-z3 () {
     install -d ${D}/${installdir}/syslink-examples/TI814X/helloworld

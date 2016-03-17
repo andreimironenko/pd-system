@@ -12,7 +12,7 @@ PROVIDES += "ti-dmai-apps"
 PE = "1"
 
 
-SRC_URI = "git://${GITSERVER}/ti-dm365/dmai.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/dmai-dm365.git;protocol=git;branch=${BRANCH} \
 	    file://doxygen_templates.tar.gz \
         file://arago-tdox \
 	"

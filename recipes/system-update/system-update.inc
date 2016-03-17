@@ -20,7 +20,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 BRANCH = "master"
 SRCREV = "${PV}"
 
-SRC_URI = "git://${GITSERVER}/oe/packages/system-update.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/system-update.git;protocol=git;branch=${BRANCH} \
            file://product/${PRODUCT} \
            file://machine/${MACHINE} \
 "

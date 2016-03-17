@@ -12,7 +12,7 @@ SRCREV = "bios_${PV}"
 BRANCH = "master"
 
 S = "${WORKDIR}/git"
-SRC_URI = "git://${GITSERVER}/ti/bios.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/bios.git;protocol=git;branch=${BRANCH}"
 
 do_install() {
     install -d ${D}${BIOS_INSTALL_DIR_RECIPE}

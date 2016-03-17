@@ -1,6 +1,6 @@
 require ${OEBASE}/arago-oe-dev/recipes/libsdl/libsdl-1.2.14.inc
 
-COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-stib)"
+COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-evm)"
 
 PR = "${INC_PR}.8"
 

@@ -4,4 +4,4 @@ SRCREV = "osal_${PV}"
 BRANCH = "master"
 
 S = "${WORKDIR}/git"
-SRC_URI = "git://${GITSERVER}/ti/osal.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/osal.git;protocol=git;branch=${BRANCH}"

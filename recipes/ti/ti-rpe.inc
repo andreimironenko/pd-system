@@ -4,7 +4,7 @@ SRCREV = "rpe_${PV}"
 BRANCH = "master"
 
 S = "${WORKDIR}/git"
-SRC_URI = "git://${GITSERVER}/ti/rpe.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/rpe.git;protocol=git;branch=${BRANCH}"
 
 SRC_URI += "\
            file://${OEBASE}/arago/recipes/ti/ti-rpe/aacdectest_c6a811x.cfg \

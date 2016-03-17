@@ -1,6 +1,6 @@
 require ti-xdctools.inc
 
-COMPATIBLE_MACHINE = "(dm365-htc|dm365-evm)"
+COMPATIBLE_MACHINE = "(dm365-evm)"
 
 PV = "3_16_03_36"
 

@@ -12,7 +12,7 @@ BRANCH = "master"
 
 S = "${WORKDIR}/git"
 
-SRC_URI = "git://${GITSERVER}/ti/c674x-aaclcdec.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/c674x-aaclcdec.git;protocol=git;branch=${BRANCH}"
 
 do_install() {
     install -d ${D}${CODEC_INSTALL_DIR_RECIPE}

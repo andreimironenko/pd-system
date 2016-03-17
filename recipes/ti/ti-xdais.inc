@@ -4,4 +4,4 @@ SRCREV = "xdais_${PV}"
 BRANCH = "master"
 
 S = "${WORKDIR}/git"
-SRC_URI = "git://${GITSERVER}/ti/xdais.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/xdais.git;protocol=git;branch=${BRANCH}"

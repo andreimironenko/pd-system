@@ -3,14 +3,14 @@ LICENSE = "MIT"
 PR = "r0"
 PE = "0"
 
-COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-evm|dm365-htc|dm365-evm|dm814x-stib|dm814x-ht5)" 
+COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-evm|dm365-evm)" 
 
 PACKAGES = "${PN}"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 HTC_DEPLOY_DIR = "${DEPLOY_DIR_IMAGE}/htc"
        
-SRC_URI = "git://${GITSERVER}/oe/packages/build-scripts.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/build-scripts.git;protocol=git;branch=${BRANCH} \
 "
 
 BRANCH = "master"

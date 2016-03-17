@@ -1,6 +1,6 @@
 require gstreamer-ti.inc
 
-COMPATIBLE_MACHINE = "(dm365-htc|dm365-evm)"
+COMPATIBLE_MACHINE = "(dm365-evm)"
 
 PV = "svnr919"
 

@@ -11,7 +11,7 @@ inherit autotools
 SRCREV = "${PN}_${PV}"
 BRANCH = "master"
 
-SRC_URI = "git://${GITSERVER}/oss/ltp-full.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/ltp-full.git;protocol=git;branch=${BRANCH}"
 
 S = "${WORKDIR}/git"
 

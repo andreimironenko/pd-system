@@ -7,7 +7,7 @@ BRANCH = "master"
 
 
 S = "${WORKDIR}/git"
-SRC_URI = "git://${GITSERVER}/ti/linuxutils.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/linuxutils.git;protocol=git;branch=${BRANCH}"
 SRC_URI += "file://sdk.mk \
 "
 

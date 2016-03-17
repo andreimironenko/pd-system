@@ -21,7 +21,7 @@ BRANCH = "master"
 
 S = "${WORKDIR}/git"
 
-SRC_URI = "git://${GITSERVER}/ti/graphics-sdk.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GIBASE}/graphics-sdk.git;protocol=git;branch=${BRANCH}"
 SRC_URI += ${EXTRA_SRC_URI}
 
 

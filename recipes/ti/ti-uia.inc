@@ -7,7 +7,7 @@ COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-evm)"
 SRCREV = "uia_${PV}"
 BRANCH = "master"
 
-SRC_URI = "git://${GITSERVER}/ti/uia.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/uia.git;protocol=git;branch=${BRANCH} \
            file://sdk.mk \
            file://patches \
 "

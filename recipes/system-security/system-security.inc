@@ -14,7 +14,7 @@ COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-evm|dm365-evm)"
 PACKAGES = "${PN}"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-SRC_URI = "git://${GITSERVER}/oe/packages/system-security.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/system-security.git;protocol=git;branch=${BRANCH} \
 "
 
 BRANCH = "master"

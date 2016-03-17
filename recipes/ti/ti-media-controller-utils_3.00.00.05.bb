@@ -5,7 +5,7 @@ COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-stib)"
 SRCREV = "ti-media-controller_${PV}"
 BRANCH = "master"
 
-SRC_URI = "git://${GITSERVER}/ti/media-controller-utils.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/media-controller-utils.git;protocol=git;branch=${BRANCH} \
           file://patches \
           "
 S = "${WORKDIR}/git"

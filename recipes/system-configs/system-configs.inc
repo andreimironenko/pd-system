@@ -15,7 +15,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 BRANCH = "master"
 SRCREV = "${PV}"
 
-SRC_URI = "git://${GITSERVER}/oe/packages/system-configs.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/system-configs.git;protocol=git;branch=${BRANCH}"
 
 S = "${WORKDIR}/git"
 

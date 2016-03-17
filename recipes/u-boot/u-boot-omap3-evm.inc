@@ -25,7 +25,7 @@ COMPATIBLE_MACHINE = "dm814x-evm"
 # disable local variable
 export LDFLAGS=""
 
-SRC_URI = "git://${GITSERVER}/bsp/u-boot-omap3.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/u-boot-omap3-evm.git;protocol=git;branch=${BRANCH} \
            file://boot.cmd           \
            file://default.cmd        \
            file://mkscr.sh           \

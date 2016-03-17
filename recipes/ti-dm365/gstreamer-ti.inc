@@ -18,7 +18,7 @@ PR = "r82+${MACHINE_KERNEL_PR}"
 
 DEPENDS = "ti-dmai gstreamer gst-plugins-base"
 
-SRC_URI = "git://${GITSERVER}/ti-dm365/gstreamer-ti.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/gstreamer-ti-dm365.git;protocol=git;branch=${BRANCH}"
 
 S = "${WORKDIR}/git"
 

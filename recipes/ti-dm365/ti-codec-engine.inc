@@ -16,7 +16,7 @@ PR = "${MACHINE_KERNEL_PR}"
 PR_append = "a"
 PVExtra = ""
 
-SRC_URI = "git://${GITSERVER}/ti-dm365/codec-engine.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/codec-engine-dm365.git;protocol=git;branch=${BRANCH}"
 
 S = "${WORKDIR}/git"
 

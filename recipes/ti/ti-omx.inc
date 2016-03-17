@@ -10,7 +10,7 @@ COMPATIBLE_MACHINE = "(dm814x-z3|dm814x-evm)"
 SRCREV = "omx_${PV}"
 BRANCH = "master"
 
-SRC_URI = "git://${GITSERVER}/ti/omx.git;protocol=git;branch=${BRANCH} \
+SRC_URI = "git://${GITSERVER}/${GITBASE}/omx.git;protocol=git;branch=${BRANCH} \
            file://sdk.mk \
            file://patches \
 "

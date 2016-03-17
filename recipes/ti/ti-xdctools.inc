@@ -11,7 +11,7 @@ require ${OEBASE}/arago/recipes/ti/ti-staging.inc
 SRCREV = "xdctools_${PV}"
 BRANCH = "master"
 
-SRC_URI = "git://${GITSERVER}/ti/xdctools.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/xdctools.git;protocol=git;branch=${BRANCH}"
 
 S = "${WORKDIR}/git"
 

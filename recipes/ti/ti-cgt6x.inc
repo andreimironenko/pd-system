@@ -15,7 +15,7 @@ SRCREV = "cgt6x_${PV}"
 BRANCH = "master"
 
 
-SRC_URI = "git://${GITSERVER}/ti/cgt6x.git;protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${GITSERVER}/${GITBASE}/cgt6x.git;protocol=git;branch=${BRANCH}"
 
 S = "${WORKDIR}/git"
 
