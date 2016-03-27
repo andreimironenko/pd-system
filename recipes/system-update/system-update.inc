@@ -22,7 +22,6 @@ SRCREV = "${PV}"
 
 SRC_URI = "git://${GITSERVER}/${GITBASE}/system-update.git;protocol=git;branch=${BRANCH} \
            file://product/${PRODUCT} \
-           file://machine/${MACHINE} \
 "
 
 S = "${WORKDIR}/git"
